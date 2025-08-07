@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Services - Luna Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Order Rijal Co.id</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="learn.html" class="nav-link">Pelajari Lebih Lanjut</a>
+                <a href="order.html" class="nav-link active">Order</a>
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="order-container">
+        <div class="order-form-wrapper">
+            <h1>Order Form</h1>
+            <p class="form-description">Order rijal untuk kegiatan apapun dan dimanapun.</p>
+            
+            <form class="order-form" id="orderForm">
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3>Informasi Orderan</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama *</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                    
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- Service Type -->
+                <div class="form-section">
+                    <h3>Service Type</h3>
+                    <div class="form-group">
+                        <label>Select Service *</label>
+                        <div class="service-options">
+                            <label class="service-option">
+                                <input type="radio" name="layanan" value="mabar" required>
+                                <div class="option-content">
+                                    <div class="option-icon">🎮</div>
+                                    <div class="option-text">
+                                        <h4>Mabar</h4>
+                                        <p>Ajak rijal mabar</p>
+                                        <span class="price">Gratis</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="radio" name="layanan" value="belajar" required>
+                                <div class="option-content">
+                                    <div class="option-icon">📕</div>
+                                    <div class="option-text">
+                                        <h4>Belajar</h4>
+                                        <p>Ajak rijal belajar</p>
+                                        <span class="price">1 Juta</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="radio" name="layanan" value="ketemuan" required>
+                                <div class="option-content">
+                                    <div class="option-icon">👯</div>
+                                    <div class="option-text">
+                                        <h4>Ketemuan</h4>
+                                        <p>Ajak rijal ketemuan</p>
+                                        <span class="price">gratis</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="radio" name="layanan" value="rapat" required>
+                                <div class="option-content">
+                                    <div class="option-icon">🤝</div>
+                                    <div class="option-text">
+                                        <h4>rapat dan sebagainya</h4>
+                                        <p>ajak rijal rapat</p>
+                                        <span class="price">asalkan ada mie ayam</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Details -->
+                <div class="form-section">
+                    <h3>Project Details</h3>
+                    <div class="form-group">
+                        <label for="judul">Acara apa*</label>
+                        <input type="text" id="judul" name="judul" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">mw jelasin lebih lanjut? </label>
+                        <textarea id="deskripsi" name="deskripsi" rows="5" placeholder="Rijal keluarlah" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="deadline"><h5>Kapan?</h5><h6>doubble klic paling samping kanan untuk munculin kalender</h6></label>
+                            <input type="date" id="deadline" name="deadline">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Jam spesifik</label>
+                            <select id="budget" name="budget">
+                                <option value="">Pilih jam</option>
+                                <option value="7-11 pagi">7-11 pagi</option>
+                                <option value="7-5 sore">7-5 sore</option>
+                                <option value="paket tengah hari">paket tengah hari</option>
+                                <option value="paket malam">paket malam</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <!-- Submit -->
+                <div class="form-section">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Order rijal 
+                    </button>
+                    <p class="form-note">* Rijal mungkin sibuk dan tidak melihat orderan,Tetaplah bersabar</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html> 
